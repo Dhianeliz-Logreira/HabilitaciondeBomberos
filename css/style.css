@@ -4,32 +4,54 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000; /* Para que esté por encima del resto del contenido */
+    z-index: 1000;
+    /* Para que esté por encima del resto del contenido */
+}
+
+body {
+    padding-top: 70px; 
+
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 .navbar-brand {
-    
+
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 20px;
 }
 
 .navbar-nav .nav-link {
-   
-    margin-left: 20px; /* Espacio entre enlaces */
-    transition: color 0.3s ease; /* Efecto suave al pasar el mouse */
+
+    margin-left: 20px;
+    /* Espacio entre enlaces */
+    transition: color 0.3s ease;
+    /* Efecto suave al pasar el mouse */
 }
 
 .navbar-nav .nav-link:hover {
-    color: #fff; /* Color al pasar el mouse (puedes cambiarlo) */
+    color: #fff;
+    /* Color al pasar el mouse (puedes cambiarlo) */
 }
 
 .navbar-toggler {
-    background-color: grey; /* Botón del menú hamburguesa en dispositivos móviles */
+    background-color: grey;
+    /* Botón del menú hamburguesa en dispositivos móviles */
 }
 
 .dropdown-menu {
-    background-color: #333; /* Color del menú desplegable */
+    background-color: #333;
+    /* Color del menú desplegable */
 }
 
 .dropdown-menu .dropdown-item {
@@ -38,10 +60,10 @@ header {
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: grey; /* Color al pasar el mouse */
+    background-color: grey;
+    /* Color al pasar el mouse */
     color: #333;
 }
-
 
 .container-fluid {
     display: flex;
@@ -60,7 +82,7 @@ header {
     object-fit: cover;
 }
 
-.quienes-somos{
+.quienes-somos {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
@@ -85,15 +107,20 @@ header {
 }
 
 .servicios-fila img {
-    width: 100px; /* Ajusta el tamaño de la imagen */
-    height: 100px; /* Ajusta la altura para que se mantengan cuadradas */
-    object-fit: cover; /* Para que la imagen se ajuste sin deformarse */
-    transition: transform 0.3s ease; /* Agrega una animación al pasar el mouse */
+    width: 100px;
+    /* Ajusta el tamaño de la imagen */
+    height: 100px;
+    /* Ajusta la altura para que se mantengan cuadradas */
+    object-fit: cover;
+    /* Para que la imagen se ajuste sin deformarse */
+    transition: transform 0.3s ease;
+    /* Agrega una animación al pasar el mouse */
 
 }
 
 .servicios-fila img:hover {
-    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+    transform: scale(1.1);
+    /* Efecto de zoom al pasar el mouse */
 }
 
 
@@ -102,79 +129,126 @@ header {
 }
 
 .accordion-button {
-    background-color: #88b9fa ;
+    background-color: #88b9fa;
     color: white;
     font-weight: bold;
-    transition: background-color 0.3s ease; /* Efecto Smooth */
+    transition: background-color 0.3s ease;
+    /* Efecto Smooth */
 }
 
 .accordion-item {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
-    margin-bottom: 15px; /* Espacio entre preguntas */
-    border-radius: 5px; /* Bordes redondeados */
-    overflow: hidden; /* Para que no se salgan los bordes redondeados */
-  }
-  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    margin-bottom: 15px;
+    /* Espacio entre preguntas */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    overflow: hidden;
+    /* Para que no se salgan los bordes redondeados */
+}
+
 .accordion-collapse {
-    transition: all 0.4s ease-in-out; /* Efecto de apertura suave */
-  }
+    transition: all 0.4s ease-in-out;
+    /* Efecto de apertura suave */
+}
 
 .accordion-button:hover {
-    background-color:#bfdaff ;
+    background-color: #bfdaff;
 }
 
 .accordion-body {
-    background-color: #f8f9fa; /* Fondo de respuesta */
+    background-color: #f8f9fa;
+    /* Fondo de respuesta */
     text-align: justify;
-  }
+}
 
 .formulario {
     background-color: #ececec;
-        margin: 50px auto; /* Top y Bottom 50px, Left y Right automático */
-        width: 80%; /* Puedes ajustar el ancho para que no ocupe toda la pantalla */
+    margin: 50px auto;
+    /* Top y Bottom 50px, Left y Right automático */
+    width: 80%;
+    /* Puedes ajustar el ancho para que no ocupe toda la pantalla */
 }
-      
 
 
 .is-invalid {
     border: 2px solid red;
-  }
+}
 
-  small {
+small {
     display: block;
     margin-top: 5px;
     color: gray;
     font-size: 14px;
-   
-  }
 
-  button:hover {
-    background-color: #0d6efd; /* Color azul de Bootstrap */
-    transition: background-color 0.3s ease-in-out;
-  }
+}
 
-  .card {
-    margin-top: 80px;
-  }
-  
 
-  .footer {
-    background-color: #333; /* Color de fondo oscuro */
-    color: #fff; /* Texto blanco */
-    text-align: center; /* Centra el texto */
-    padding: 20px; /* Espacio arriba y abajo */
-    margin-top: 50px; /* Espacio entre el contenido y el footer */
+.carousel-item img {
+    height: 30vh; /* Aumentamos la altura del banner */
+    object-fit: cover; /* Para que la imagen se ajuste sin deformarse */
+    
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6); /* Oscurece el fondo para mejorar la lectura */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 20%; /* Reducimos su ancho */
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 70%;
+    padding: 15px;
+} 
+
+/* Cambio de color al pasar el mouse (hover) */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+.footer {
+    background-color: #333;
+    /* Color de fondo oscuro */
+    color: #fff;
+    /* Texto blanco */
+    text-align: center;
+    /* Centra el texto */
+    padding: 20px;
+    /* Espacio arriba y abajo */
+    margin-top: 0;
+    /* Espacio entre el contenido y el footer */
 }
 
 .footer p {
-    margin: 0; /* Para que el texto no tenga espacio extra */
-    font-size: 14px; /* Tamaño de letra */
-    letter-spacing: 1px; /* Espaciado entre letras */
+    margin: 0;
+    /* Para que el texto no tenga espacio extra */
+    font-size: 14px;
+    /* Tamaño de letra */
+    letter-spacing: 1px;
+    /* Espaciado entre letras */
 }
 
 .footer a {
-    color: #fff; /* Color para enlaces */
-    text-decoration: none; /* Quitar subrayado */
-    font-weight: bold; /* Negrita */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
-
