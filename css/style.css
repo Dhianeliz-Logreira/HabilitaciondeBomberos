@@ -166,7 +166,7 @@ main {
     background-color: #ececec;
     margin: 50px auto;
     /* Top y Bottom 50px, Left y Right automático */
-    width: 80%;
+    width: 68%;
     /* Puedes ajustar el ancho para que no ocupe toda la pantalla */
 }
 
@@ -223,6 +223,51 @@ small {
 .carousel-control-prev:hover .carousel-control-prev-icon,
 .carousel-control-next:hover .carousel-control-next-icon {
     background-color: rgba(128, 128, 128, 0.7);
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-left: 10px solid;
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease;
+
+}
+.tarjeta:hover {
+    transform: translateY(-5px);
+
+}
+
+.tarjeta-que-es {
+    border-color: #88b9fa;
+    background-color: #e9f2ff;
+}
+
+.tarjeta-importancia {
+    border-color: #f5a623;
+    background-color: #fff5e5;
+}
+
+.tarjeta-imagen img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    padding-left: 10px;
+  }
+
+.tarjeta-texto {
+    flex: 1;
+    text-align: justify;
+}
+
+@media (max-width){
+    .tarjeta {
+        flex-direction: column;
+        border-left: none;
+        border-top: 8px solid;
+    }
 }
 
 .footer {
