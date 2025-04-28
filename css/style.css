@@ -1,3 +1,8 @@
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', serif;;
+}
+
 header {
     background-color: gray;
     padding: 10px 0;
@@ -9,8 +14,8 @@ header {
 }
 
 body {
+    font-family: 'Lato', sans-serif;
     padding-top: 70px; 
-
 }
 
 html, body {
@@ -25,7 +30,6 @@ main {
 }
 
 .navbar-brand {
-
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 20px;
@@ -51,6 +55,7 @@ main {
 
 .dropdown-menu {
     background-color: #333;
+    font-family: 'Lato', sans-serif;
     /* Color del menú desplegable */
 }
 
@@ -131,7 +136,6 @@ main {
 .accordion-button {
     background-color: #88b9fa;
     color: white;
-    font-weight: bold;
     transition: background-color 0.3s ease;
     /* Efecto Smooth */
 }
@@ -165,6 +169,7 @@ main {
 .formulario {
     background-color: #ececec;
     margin: 50px auto;
+    padding: 20px 15px;
     /* Top y Bottom 50px, Left y Right automático */
     width: 68%;
     /* Puedes ajustar el ancho para que no ocupe toda la pantalla */

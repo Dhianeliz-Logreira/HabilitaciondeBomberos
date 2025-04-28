@@ -7,9 +7,13 @@
     <title>HABILITACIÓN DE BOMBEROS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
 
     <header>
@@ -29,16 +33,19 @@
                                 Servicios
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./pages/sistemadeteccion.html">Sistema Detección</a></li>
-                                <li><a class="dropdown-item" href="./pages/sistemahidraulico.html">Sistemas Hidráulicos</a></li>
-                                <li><a class="dropdown-item" href="./pages/planesdeevacuacion.html">Plan de evacuación</a></li>
+                                <li><a class="dropdown-item" href="./pages/sistemadeteccion.html">Sistema Detección</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/sistemahidraulico.html">Sistemas
+                                        Hidráulicos</a></li>
+                                <li><a class="dropdown-item" href="./pages/planesdeevacuacion.html">Plan de
+                                        evacuación</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/habilitaciondebombero.html">Habilitaciones de bomberos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -48,6 +55,7 @@
 
 
     <main>
+
         <section class="info">
             <img src="./img/bomberos.png" alt="">
         </section>
@@ -72,16 +80,24 @@
                 <h2>NUESTROS SERVICIOS</h2>
                 <div class="row servicios-fila">
                     <div class="col">
-                        <img src="./img/home.png" alt="servicios">
+                        <a href="./pages/sistemadeteccion.html">
+                            <img src="./img/home.png" alt="servicios">
+                        </a>
                     </div>
                     <div class="col">
-                        <img src="./img/home.png" alt="servicios">
+                        <a href="./pages/sistemahidraulico.html">
+                            <img src="./img/home.png" alt="servicios">
+                        </a>
                     </div>
                     <div class="col">
-                        <img src="./img/home.png" alt="servicios">
+                        <a href="./pages/planesdeevacuacion.html">
+                            <img src="./img/home.png" alt="servicios">
+                        </a>
                     </div>
                     <div class="col">
-                        <img src="./img/home.png" alt="servicios">
+                        <a href="./pages/habilitaciondebombero.html">
+                            <img src="./img/home.png" alt="servicios">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -89,46 +105,55 @@
 
         <section class="faq">
             <div class="container">
-                <h2 class="text-center">Preguntas frecuentes</h2>
+                <h2 class="text-center">PREGUNTAS FRECUENTES</h2>
                 <div class="accordion" id="accordionFAQ">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                ¿Cuánto tarda el proceso de habilitación?
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <p>¿Cuánto tarda el proceso de habilitación?</p>
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionFAQ">
                             <div class="accordion-body">
-                              El tiempo puede variar según la documentación presentada, pero en promedio tarda entre 7 y 15 días hábiles.
+                                <p>El tiempo puede variar según la documentación presentada, pero en promedio tarda entre 7
+                                y 15 días hábiles.</p>
                             </div>
-                          </div>
+                        </div>
                     </div>
 
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            ¿Qué documentos necesito para iniciar el trámite?
-                          </button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <p>¿Qué documentos necesito para iniciar el trámite?</p>
+                            </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
-                          <div class="accordion-body">
-                            Se necesita cédula del titular, plano de ubicación, y certificado de bomberos anterior (si lo hubiera).
-                          </div>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                               <p>Se necesita cédula del titular, plano de ubicación, y certificado de bomberos anterior
+                                (si lo hubiera).</p>
+                            </div>
                         </div>
-                      </div>
+                    </div>
 
-                      <div class="accordion-item">
+                    <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            ¿El servicio incluye asesoramiento para la instalación de sistemas de detección?
-                          </button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                               <p>¿El servicio incluye asesoramiento para la instalación de sistemas de detección?</p>
+                            </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
-                          <div class="accordion-body">
-                            Sí, ofrecemos asesoramiento completo para la instalación de sistemas de detección y prevención de incendios.
-                          </div>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                <p>Sí, ofrecemos asesoramiento completo para la instalación de sistemas de detección y
+                                prevención de incendios.</p>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
 
             </div>
@@ -168,7 +193,7 @@
             <p>&copy; 2025 Todos los derechos reservados | Empresa XYZ</p>
         </div>
     </footer>
-    
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
